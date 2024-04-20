@@ -1,0 +1,15 @@
+/* fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+}
+
+header{
+    background: url(img/shopping.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
