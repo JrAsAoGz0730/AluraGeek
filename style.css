@@ -13,3 +13,73 @@ header{
     background-position: center;
     height: 300px;
 }
+
+header h1{
+    text-align: center;
+    font-size: 35px;
+    color: #fff;
+padding: 30px 0;
+}
+
+.contenedor{
+    max-width: 1200px;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* Ocultar lo que queda fuera del contenedor */
+    contain: paint;
+}
+
+.contenedor .contenedor-items{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 30px;
+    grid-row-gap: 30px;
+    width: 100%;
+    transition: .3s;
+}
+
+.contenedor .contenedor-items .item{
+    max-width: 200px;
+    padding: 20px;
+    margin: auto;
+    border: 1px solid #000;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.contenedor-items .item:hover{
+    box-shadow: 0 0 10px #000;
+    scale: 1.05;
+}
+
+.contenedor-items .item .img-item{
+width: 100%;
+}
+
+.contenedor-items .item .titulo-item{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contenedor-items .item .precio-item{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.contenedor-items .item .boton-item{
+    display: block;
+    margin: 10px auto;
+    border: none;
+    background: #000;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
